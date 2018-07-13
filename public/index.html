@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" id="vp"/>
+
+
+    <meta name="theme-color" content="#000000">
+ 
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json">
+    <link rel="shortcut icon" href="%PUBLIC_URL%/favicon.ico">
+
+    <title>React App</title>
+
+        <script type="text/javascript">
+
+          var wd = document.documentElement.clientWidth * window.devicePixelRatio / 10;
+          document.getElementsByTagName("html")[0].style.fontSize = wd + "px";
+
+          var scale = 1 / window.devicePixelRatio;
+          var mstr = 'initial-scale=' + scale + ', maximum-scale=' + scale + ', minimum-scale=' + scale + ', user-scalable=no';
+          document.getElementById("vp").content = mstr;
+    </script>
+  </head>
+  <body>
+    <noscript>
+      You need to enable JavaScript to run this app.
+    </noscript>
+    <div id="root"></div>
+    
+  </body>
+</html>
